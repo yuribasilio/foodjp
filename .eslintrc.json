@@ -24,6 +24,18 @@
         "import/extensions": "off",
         "import/no-unresolved": "off",
         "react/react-in-jsx-scope": "off",
-        "no-unused-vars": "off"
+        "no-unused-vars": "off",
+        "react/no-unused-prop-types": "off",
+        "react/require-default-props": "off",
+        "react/destructuring-assignment": "off",
+        "jsx-a11y/anchor-is-valid": "off",
+        "max-len": "off",
+        "react/no-array-index-key": "off",
+        "react/jsx-no-useless-fragment": "off",
+        "no-undef":"off",
+        "no-nested-ternary": "off",
+        "eqeqeq": "off",
+        "no-unused-expressions": "off",
+        "no-lone-blocks": "off",
     }
 }
