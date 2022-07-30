@@ -68,7 +68,7 @@ export default function Home() {
             <MainMenu data={mainMenu} />
           </div>
           <div className="flex w-3/12 items-end justify-end mb-[5px]">
-            <a href="#" className="flex border-[2px] border-black px-[40px] py-[4px] text-[22px] capitalize rounded-lg hover:text-[#DA2535] hover:border-[#DA2535]">entrar</a>
+            <a href="#" className="flex border-[2px] border-black px-[60px] py-[4px] text-[22px] capitalize rounded-lg hover:text-[#DA2535] hover:border-[#DA2535]">entrar</a>
           </div>
         </div>
         <div className="flex w-full gap-40">
@@ -108,7 +108,7 @@ export default function Home() {
         <div className="flex w-full flex-col mt-[100px]">
           <h1 className="flex w-full text-5xl text-[#292929] mb-[25px] ">Comentários</h1>
           <div className="flex gap-10">
-            <Comments data={comentarios} />
+            <Comments data={comentarios} size="19px" color="#DA2535" />
           </div>
         </div>
       </div>
