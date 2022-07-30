@@ -8,12 +8,11 @@ export interface CommentsProps {
 
 export default function Comments(props: CommentsProps) {
   const starShow = (star: number) => {
-    let stars = [];
+    const stars = [];
     for (let i = 0; i < star; i++) {
       stars.push(<IconStar size="19px" color="#DA2535" key={i} />)
     }
     return stars;
-
   }
   return (
     <>
@@ -32,4 +31,3 @@ export default function Comments(props: CommentsProps) {
     </>
   );
 }
-

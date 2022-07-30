@@ -36,6 +36,5 @@
         "no-nested-ternary": "off",
         "eqeqeq": "off",
         "no-unused-expressions": "off",
-        "no-lone-blocks": "off",
     }
 }
