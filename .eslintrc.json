@@ -32,6 +32,6 @@
     "no-unused-expressions": "off",
     "no-plusplus": "off",
     "no-console": "off",
-    "jsx-a11y/alt-text": "off",
+    "jsx-a11y/alt-text": "off"
   }
 }
