@@ -4,7 +4,8 @@ import Geocode from 'react-geocode';
 import IconMap from '../IconMap';
 
 export interface LocalizacaoProps {
-  size: string;
+  width: number;
+  height: number;
   zoom: number;
 }
 
@@ -17,9 +18,6 @@ export default function Localizacao(props: LocalizacaoProps) {
   const [longitudes, setLongitudes] = useState(-47.931812);
 
   Geocode.setApiKey(apiKeyGeo);
-  Geocode.setLanguage('pt');
-  Geocode.setRegion('br');
-  Geocode.setLocationType('ROOFTOP');
 
   const getGeoCode = (myAddress: string) => {
     Geocode.fromAddress(myAddress).then(
@@ -38,8 +36,8 @@ export default function Localizacao(props: LocalizacaoProps) {
 
   return (
     <div className="flex flex-col w-full">
-      <div className={`flex w-full h-[${props.size}] rounded-xl overflow-hidden`}>
-        <img className="flex w-full" src={`https://maps.googleapis.com/maps/api/staticmap?size=2000x${props.size}&scale=2&format=png&maptype=roadmap&zoom=${props.zoom}&markers=size:normal%7Ccolor:red%7C${latitudes},${longitudes}&key=${apiKeyMaps}`} />
+      <div className={`flex w-full h-[${props.height}] rounded-xl overflow-hidden`}>
+        <img className="flex w-full" src={`https://maps.googleapis.com/maps/api/staticmap?size=${props.width}x${props.height}&scale=2&format=png&maptype=roadmap&zoom=${props.zoom}&markers=size:small%7Ccolor:red%7C${latitudes},${longitudes}&key=${apiKeyMaps}`} />
       </div>
       <div className="flex flex-row w-full justify-center mt-[40px]">
         <div className="flex w-6/12 border-[1px] border-[#292929] p-[15px] rounded-tl-lg rounded-bl-lg">
