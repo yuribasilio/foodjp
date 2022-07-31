@@ -1,6 +1,8 @@
 import React from 'react';
+import BottomMenu from '../../components/BottomMenu';
 import Comments from '../../components/Comments';
 import ImgTop from '../../components/ImgTop';
+import Localizacao from '../../components/Localizacao';
 import Logo from '../../components/Logo';
 import MainMenu from '../../components/MainMenu';
 import MenuFood from '../../components/MenuFood';
@@ -57,6 +59,61 @@ export default function Home() {
     },
   ];
 
+  const menuContatoBottom = [
+    {
+      header: 'Contato',
+      list: [
+        {
+          name: '+55 21 9999-9999',
+          link: '#',
+        },
+        {
+          name: 'email@gmail.com',
+          link: '#',
+        },
+      ],
+
+    },
+  ];
+
+  const menuSobreBottom = [
+    {
+      header: 'Sobre nós',
+      list: [
+        {
+          name: 'Menu',
+          link: '#',
+        },
+        {
+          name: 'Valores',
+          link: '#',
+        },
+        {
+          name: 'Página Principal',
+          link: '#',
+        },
+      ],
+
+    },
+  ];
+
+  const menuServicosBottom = [
+    {
+      header: 'Serviços',
+      list: [
+        {
+          name: 'Entrega',
+          link: '#',
+        },
+        {
+          name: 'Retirada',
+          link: '#',
+        },
+      ],
+
+    },
+  ];
+
   return (
     <div className="flex w-screen justify-center">
       <div className="flex w-[1120px] flex-col">
@@ -109,6 +166,30 @@ export default function Home() {
           <h1 className="flex w-full text-5xl text-[#292929] mb-[25px] ">Comentários</h1>
           <div className="flex gap-10">
             <Comments data={comentarios} size="19px" color="#DA2535" />
+          </div>
+        </div>
+        <div className="flex flex-col w-full mt-[50px]">
+          <div className="flex flex-col w-full">
+            <h1 className="flex w-full text-5xl text-[#292929] mb-[25px] ">Localização</h1>
+          </div>
+          <div className="flex w-full justify-center mt-[25px]">
+            <Localizacao lat={-15.799203178902705} long={-47.931814378601814} size="500px" zoom={17} />
+          </div>
+        </div>
+        <div className="flex w-full my-[100px]">
+          <div className="flex w-3/12 mt-[40px] mb-[10px]">
+            <Logo width="157px" height="49px" />
+          </div>
+          <div className="flex w-9/12 justify-center mt-[30px]">
+            <div className="flex w-4/12">
+              <BottomMenu data={menuContatoBottom} />
+            </div>
+            <div className="flex w-4/12">
+              <BottomMenu data={menuSobreBottom} />
+            </div>
+            <div className="flex w-4/12">
+              <BottomMenu data={menuServicosBottom} />
+            </div>
           </div>
         </div>
       </div>
