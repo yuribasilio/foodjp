@@ -173,7 +173,7 @@ export default function Home() {
             <h1 className="flex w-full text-5xl text-[#292929] mb-[25px] ">Localização</h1>
           </div>
           <div className="flex w-full justify-center mt-[25px]">
-            <Localizacao width={2000} height={250} zoom={15} />
+            <Localizacao width={1000} height={200} zoom={15} />
           </div>
         </div>
         <div className="flex w-full my-[100px]">

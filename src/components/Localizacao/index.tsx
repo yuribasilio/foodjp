@@ -14,8 +14,8 @@ export default function Localizacao(props: LocalizacaoProps) {
   const apiKeyGeo = 'AIzaSyDBjFICp1-9jsUd20W2NmgzMcfvXASp7XA';
 
   const [address, setAddress] = useState('');
-  const [latitudes, setLatitudes] = useState(-15.7992949);
-  const [longitudes, setLongitudes] = useState(-47.931812);
+  const [latitudes, setLatitudes] = useState(-15.813785249298455);
+  const [longitudes, setLongitudes] = useState(-47.89026509610409);
 
   Geocode.setApiKey(apiKeyGeo);
 
